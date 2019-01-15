@@ -7,6 +7,14 @@ class StudentsController < ApplicationController
     @student = Student.find_by_id(params[:id])
   end
 
+  def new
+    @student = Student.new
+  end
+
+  def edit
+    @school_class = SchoolClass.find_by_id(params[:id])
+  end
+
   def create
     # binding.pry
     @student = Student.create(first_name: params[:first_name], last_name: params[:last_name])
