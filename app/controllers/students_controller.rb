@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   end
 
   def edit
-    @school_class = SchoolClass.find_by_id(params[:id])
+    @student = Student.find_by_id(params[:id])
   end
 
   def create
