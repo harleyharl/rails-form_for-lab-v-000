@@ -4,6 +4,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+    @student = SchoolClass.find_by_id(params[:id])
   end
 
   def create
