@@ -3,7 +3,6 @@ require 'pry'
 class SchoolClassesController < ApplicationController
 
   def index
-    # binding.pry
   end
 
   def show
