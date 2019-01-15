@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
 
   def create
     # binding.pry
-    @student = SchoolClass.new(school_class_params(:title, :room_number))
+    @student = Student.new(student_params(:title, :room_number))
     @student.save
     redirect_to school_class_path(@student)
 	end
